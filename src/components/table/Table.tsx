@@ -26,8 +26,7 @@ const countryOptions = [
   { value: "UK", label: "UK" },
   { value: "Russia", label: "Russia" },
   { value: "India", label: "India" },
-  { value: "Turkey", label: "Turkey" },
-  // xohlasang barcha davlatlarni shu ro'yxatga qo‘shish mumkin
+  { value: "Turkey", label: "Turkey" }
 ];
 
 function Table() {
@@ -130,7 +129,7 @@ function Table() {
           onChange={handleChange}
         />
 
-        {/* COUNTRY SELECT */}
+        
         <Select className="select"
           options={countryOptions}
           value={countryOptions.find((c) => c.value === form.country)}
